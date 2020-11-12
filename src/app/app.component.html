@@ -1,9 +1,19 @@
-<!-- <div class="alert alert-danger" role="alert">
-  A simple primary alert-check it out!
-</div>
---> 
+
+
 <div class ="jumbotron jumbotron-fluid">  
-<div class = "container"> 
-  
+<div class = "container">
+<h1 class="display-4"> Add Articles </h1> <!-- what do differnt  display types do?-->
+<div class="form-group">
+  <label for="title"> Title</label>
+  <input type="text" class="form-control" name="title" id="" aria-describedby="title" placeholder="" #newTitle> 
+  <!-- how does he know to do aria-describedby? is that common html knowledge-->
+  <hr> <!-- this is the thin line that divides horizontally -->
+  <label for="title"> Link</label>
+  <input type="text" class="form-control" name="link" id="" aria-describedby="title" placeholder="" #newLink> 
+  <!-- use # so you can pass link/title into add article's parameter-->
 </div>
+<button class ="btn btn-primary" (click)="addArticle (newTitle, newLink)"> Add Article</button>
+</div>
+</div>
+<app-article> </app-article>
 <router-outlet></router-outlet> 

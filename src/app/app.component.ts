@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'redditclone';
+  addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean{ 
+    // this helps to check if my button is working.
+console.log(title.value, link.value);
+
+return false;
+  }
 }
